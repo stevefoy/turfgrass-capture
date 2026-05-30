@@ -1,0 +1,15 @@
+export const colors = {
+  canvas: '#f5f7f2',
+  surface: '#ffffff',
+  text: '#17211b',
+  mutedText: '#607068',
+  border: '#d8e0da',
+  primary: '#216441',
+  primaryPressed: '#174a30',
+  primarySoft: '#e1efe5',
+  accent: '#c8652e',
+  warning: '#9c5b16',
+  cameraOverlay: 'rgba(6, 18, 12, 0.68)',
+  cameraLine: 'rgba(255, 255, 255, 0.82)',
+  cameraMuted: 'rgba(255, 255, 255, 0.68)',
+} as const;

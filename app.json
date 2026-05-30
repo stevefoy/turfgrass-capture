@@ -1,0 +1,46 @@
+{
+  "expo": {
+    "name": "Turfgrass Capture",
+    "slug": "turfgrass-capture",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "scheme": "turfgrasscapture",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "ie.atu.turfgrasscapture",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Allow Turfgrass Capture to photograph survey plots.",
+        "NSLocationWhenInUseUsageDescription": "Allow Turfgrass Capture to record the location of survey plots.",
+        "NSMotionUsageDescription": "Allow Turfgrass Capture to record movement and orientation during plot photography."
+      }
+    },
+    "android": {
+      "package": "ie.atu.turfgrasscapture",
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION"
+      ]
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Turfgrass Capture to photograph survey plots."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Allow Turfgrass Capture to record the location of survey plots."
+        }
+      ],
+      "expo-sqlite"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

@@ -1,0 +1,26 @@
+# Dependencies and Expo state
+node_modules/
+.expo/
+dist/
+web-build/
+
+# Local tooling
+.tools/
+.local-home/
+
+# Build output
+*.apk
+*.aab
+*.ipa
+*.log
+coverage/
+
+# Local configuration
+.env
+.env.*.local
+
+# Editor and operating-system files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

@@ -1,0 +1,54 @@
+{
+  "name": "turfgrass-capture",
+  "version": "0.1.0",
+  "private": true,
+  "main": "expo-router/entry",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run --pool=threads --no-file-parallelism --maxWorkers=1",
+    "test:watch": "vitest",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "check": "npm run typecheck && npm run lint && npm run test && npm run format:check",
+    "build:preview": "eas build --profile preview --platform all",
+    "build:production": "eas build --profile production --platform all"
+  },
+  "dependencies": {
+    "@expo/vector-icons": "^15.0.2",
+    "expo": "~56.0.5",
+    "expo-camera": "~56.0.7",
+    "expo-constants": "~56.0.8",
+    "expo-crypto": "~56.0.4",
+    "expo-dev-client": "~56.0.16",
+    "expo-device": "~56.0.4",
+    "expo-file-system": "~56.0.7",
+    "expo-font": "~56.0.3",
+    "expo-linking": "~56.0.6",
+    "expo-location": "~56.0.14",
+    "expo-router": "~56.2.7",
+    "expo-sensors": "~56.0.5",
+    "expo-sqlite": "~56.0.4",
+    "expo-status-bar": "~56.0.4",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "react-native": "0.85.3",
+    "react-native-safe-area-context": "~5.7.0",
+    "react-native-screens": "4.25.2",
+    "react-native-web": "~0.21.0"
+  },
+  "devDependencies": {
+    "@types/react": "~19.2.2",
+    "eslint": "^9.39.2",
+    "eslint-config-expo": "~56.0.4",
+    "prettier": "^3.8.1",
+    "typescript": "~6.0.3",
+    "vitest": "^4.0.18"
+  },
+  "engines": {
+    "node": ">=24 <25"
+  }
+}
